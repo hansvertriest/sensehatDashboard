@@ -48,9 +48,9 @@ const updateData = (data) => {
 	const pressureElement = document.getElementById("pressure");
 	const humidityElement = document.getElementById("humidity");
 	console.log(data);
-	tempElement.innerHTML = data.temp;
-	pressureElement.innerHTML = data.pressure;
-	humidityElement.innerHTML = data.humidity;
+	tempElement.innerHTML =  data.temp.toFixed(2);
+	pressureElement.innerHTML = data.pressure.toFixed(2);
+	humidityElement.innerHTML = data.humidity.toFixed(2);
 
 }
 
